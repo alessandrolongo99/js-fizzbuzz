@@ -1,36 +1,39 @@
-const row = document.querySelector('div.row');
-
 for (let i = 1; i <= 100; i++) {
+    const row = document.querySelector('div.row');
+    const col = document.createElement('div');
+    const element = document.createElement('div');
+    col.className = 'col';
+
     if (i % 3 == 0 && i % 5 == 0) {
         console.log(i + ' fizzbuzz');
-        
-        const element = document.createElement('div');
-        element.className = 'col bg-danger ms_box';
-        element.append('fizzbuzz')
-        row.append(element);
+
+        element.className = 'ms_box bg-danger';
+        element.append('fizzbuzz');
+        col.append(element);
+        row.append(col);
 
     } else if (i % 3 == 0) {
         console.log(i + ' fizz');
-        
-        const element = document.createElement('div');
-        element.className = 'col bg-success ms_box';
-        element.append('fizz')
-        row.append(element);
+
+        element.className = 'ms_box bg-success';
+        element.append('fizz');
+        col.append(element);
+        row.append(col);
 
     } else if (i % 5 == 0) {
         console.log(i + ' buzz');
-        
-        const element = document.createElement('div');
-        element.className = 'col bg-warning ms_box';
-        element.append('buzz')
-        row.append(element);
+
+        element.className = 'ms_box bg-warning';
+        element.append('buzz');
+        col.append(element);
+        row.append(col);
 
     } else {
         console.log(i);
-        
-        const element = document.createElement('div');
-        element.className = 'col bg-primary ms_box';
-        element.append(i)
-        row.append(element);
+
+        element.className = 'ms_box bg-primary';
+        element.append(i);
+        col.append(element);
+        row.append(col);
     }
 }

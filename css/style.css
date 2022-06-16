@@ -2,7 +2,11 @@ body{
     background-color: #083b4c;
 }
 
-/* .ms_box{
-    height: 100px;
-    width: 100px;
-} */
+.ms_box{
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    line-height: 140px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
