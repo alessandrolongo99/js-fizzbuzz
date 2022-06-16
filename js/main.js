@@ -9,31 +9,27 @@ for (let i = 1; i <= 100; i++) {
 
         element.className = 'ms_box bg-danger';
         element.append('fizzbuzz');
-        col.append(element);
-        row.append(col);
 
     } else if (i % 3 == 0) {
         console.log(i + ' fizz');
 
         element.className = 'ms_box bg-success';
         element.append('fizz');
-        col.append(element);
-        row.append(col);
+
 
     } else if (i % 5 == 0) {
         console.log(i + ' buzz');
 
         element.className = 'ms_box bg-warning';
         element.append('buzz');
-        col.append(element);
-        row.append(col);
 
     } else {
         console.log(i);
 
         element.className = 'ms_box bg-primary';
         element.append(i);
-        col.append(element);
-        row.append(col);
     }
+
+    col.append(element);
+    row.append(col);
 }
